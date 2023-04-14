@@ -1,0 +1,23 @@
+﻿<Window x:Class="FootballManager.SelectFootballClub"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FootballManager"
+        mc:Ignorable="d"
+        Title="SelectFootballClub" Height="400" Width="400">
+    <Border Grid.Row="1" Grid.RowSpan="2" Background="DarkCyan" >
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition />
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="Футбольные клубы" Foreground="White" FontSize="15" Margin="5,0" VerticalAlignment="Center"/>
+            <ListBox Name="lb_Content" Grid.Row="1" Grid.ColumnSpan="2" />
+
+            <Button Content=" Добавить " Grid.Row="2" Grid.ColumnSpan="2" Background="Transparent" Foreground="White" BorderThickness="0" Click="OnBtnClick_AddFootballClub" />
+        </Grid>
+    </Border>
+</Window>

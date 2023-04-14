@@ -1,0 +1,20 @@
+﻿<Window x:Class="FootballManager.SelectDate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FootballManager"
+        mc:Ignorable="d"
+        Title="SelectDate" Height="250" Width="200" WindowStartupLocation="CenterScreen">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <Calendar Name="c_SelectDate" VerticalAlignment="Center"/>
+
+        <Button Grid.Row="1" Content="Выбрать" Foreground="White" Background="DarkCyan" FontSize="15" Click="OnBtnClick_Select"/>
+    </Grid>
+</Window>
